@@ -1,0 +1,737 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+
+body {
+    background: url(../imges/header/main_back.jpg) no-repeat center;
+}
+.container {
+    width: $width-wide;
+    max-width: $break-large;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+// ************** header *******************
+header {
+    position: relative;
+
+    h1 {
+        
+        @include responsive(large-screens) {
+            justify-items: center;
+        }
+
+        img {
+            width: 375px;
+            height: 600px;
+
+            @include responsive(large-screens) {
+                width: 1920px;
+                height: 1013px;
+            }
+        }
+    }
+
+    .container {
+        .meun-btn {
+            position: absolute;
+            top: 10px; left: 284px;
+            width: 76px; height: 76px;
+            border: none;
+            background: none;
+
+            @include responsive(large-screens) {
+                top: 10%; left: 80%;
+                transform: translate(-10%, -80%);
+                width: 121px; height: 121px;
+            }
+        }
+
+        .header-box {
+            width: 600px;
+
+            .frame {
+                position: absolute;
+                top: 145px; left: 20px;
+                width: 344px; height: 280px;
+
+                @include responsive(large-screens) {
+                    top: 48%; left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 980px; height: 615px;
+                }
+            }
+
+            .txt {
+                position: absolute;
+                top: 158px; left: 110px;
+                justify-items: center;
+
+                img {
+                    width: 160px; height: 70px;
+                }
+                .my {
+                    width: 80px; height: 60px;
+                }
+
+                @include responsive(large-screens) {
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                    img {
+                        width: 452px; height: 150px;
+                    }
+                    .my {
+                        width: 187px; height: 172px;
+                    }
+                }
+            }
+        }
+        
+        .header-button-box {
+            position: absolute;
+            bottom: 10px; left: 16px;
+            display: flex;
+
+            .p-btn {
+                width: 130px; height: 130px;
+            }
+
+            .h-btn {
+                .h-btn1 {
+                    position: absolute;
+                    bottom: -10px; left: 150px;
+                    width: 122px; height: 106px;
+                }
+                .h-btn2 {
+                    position: absolute;
+                    bottom: 70px; left: 240px;
+                    width: 122px; height: 106px;
+                }
+            }
+            @include responsive(large-screens) {
+                top: 84%; left: 34%;
+                transform: translate(-84%, -34%);
+                .p-btn {
+                    width: 205px; height: 206px;
+                }
+                .h-btn {
+                    position: absolute;
+                    top:135%; left: 180%;
+                    .h-btn1 {
+                        top: -140px; left: 60px;
+                        width: 163px; height: 152px;
+                    }
+                    .h-btn2 {
+                        width: 163px; height: 152px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ************** main *******************
+main {
+    .my-box {
+        margin-top: 64px;
+        margin-bottom: 80px;
+
+        @include responsive(large-screens) {
+            margin-top: 132px;
+            margin-bottom: 120px;
+        }
+
+        .about-box {
+            position: relative;
+
+            .mbf {
+                width: 353px; height: 701px;
+            }
+            .pcf {
+                display: none;
+            }
+            @include responsive(large-screens) {
+                .mbf {
+                    display: none;
+                }
+                .pcf {
+                    display: block;
+                }
+            }
+
+            .about-title {
+                position: absolute;
+                top: 50px; left: 70px;
+                justify-items: center;
+
+                .about-me {
+                    width: 160px; height: 30px;
+                }
+                .about-txt {
+                    margin-top: 10px;
+                    width: 220px; height: 20px;
+                }
+                @include responsive(large-screens) {
+                    top: 62px; left: 100px;
+
+                    .about-me {
+                        width: 410px; height: 67px;
+                    }
+                    .about-txt {
+                        width: 430px; height: 31px;
+                    }
+                }
+            }
+            .about-info {
+                position: absolute;
+                top: 120px; left: 35px;
+                display: flex;
+
+                img {
+                    width: 130px; height: 130px;
+                }
+
+                .info-box1 {
+                    margin-left: 10px;
+
+                    h2 {
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: $second-title;
+                    }
+                    li {
+                        display: flex;
+                        margin-bottom: 20px;
+                        h3 {
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                        p {
+                            margin-left: 10px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                @include responsive(large-screens) {
+                    top: 200px; left: 100px;
+                    flex-direction: column;
+
+                    img {
+                        width: 280px; height: 280px;
+                    }
+
+                    .info-box1 {
+                        margin-top: 40px;
+                        h2 {
+                            font-size: 30px;
+                        }
+                        li {
+                            margin-bottom: 30px;
+                            h3 {
+                                font-size: 24px;
+                            }
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info-box2 {
+                position: absolute;
+                top: 276px; left: 35px;
+                h2 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $second-title;
+                }
+                .cer-box {
+                    margin-bottom: 20px;
+                    li {
+                        display: flex;
+                    }
+                }
+                li {
+                    margin-top: 3px;
+                    h3 {
+                        font-size: 12px;
+                        margin-right: 10px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                }
+                @include responsive(large-screens) {
+                    top: 197px; left: 480px;
+
+                    h2 {
+                        font-size: 30px;
+                    }
+                    li {
+                        margin-top: 15px;
+                        h3 {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .info-box3 {
+                position: absolute;
+                top: 560px; left: 35px;
+
+                h2 {
+                    font-size: 16px;
+                    color: $second-title;
+                    font-weight: bold;
+                }
+                li {
+                    margin-top: 3px;
+                    h3 {
+                        font-size: 12px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                }
+                @include responsive(large-screens) {
+                    top: 197px; left: 780px;
+
+                    h2 {
+                        font-size: 30px;
+                    }
+                    li {
+                        margin-top: 15px;
+                        h3 {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .ab-btn {
+            display: none;
+            
+            @include responsive(large-screens) {
+                display: block;
+                position: absolute;
+                top: 570px; left: 858px;
+                width: 182px; height: 181px;
+
+            }
+        }
+    }
+
+
+    .skill-box {
+        margin-left: 16px;
+
+        .skills-logo {
+            width: 114px; height: 30px;
+
+            @include responsive(large-screens) {
+                width: 307px; height: 67px;
+            }
+        }
+
+        .skill {
+            margin-top: 74px;
+
+            .skill-list {
+                display: grid;
+                grid-template-columns: repeat(3,120px);
+                grid-auto-rows: minmax(120px, auto);
+                grid-gap: (20px, 20px);
+                margin-bottom: 52px;
+                li {
+                    width: 104px; height: 104px;
+                    border-radius: 50%;
+                    background-color: #d6eeff;
+                    text-align: center;
+                        justify-items: center;
+                        align-content: center;
+                    img {
+                        width: 51px; height: 51px;
+                    }
+                }
+            }
+            @include responsive(large-screens) {
+                margin-top: 150px;
+
+                .skill-list {
+                    grid-template-columns: repeat(4,255px);
+                    grid-auto-rows: minmax(255px,auto);
+                    grid-gap: (200px, 200px);
+                    margin-bottom: 152px;
+                    li {
+                        width: 180px; height: 180px;
+                        img {
+                            width: 90px; height: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolio-box {
+        margin-left: 16px;
+
+        .pf-logo{
+            width: 169px; height: 29px;
+            margin-bottom: 60px;
+
+            @include responsive(large-screens) {
+                width: 465px; height: 71px;
+            }
+        }
+
+        .web-box {
+                position: relative;
+                margin-bottom: 94px;
+            .img-back {
+                width: 343px; height: 220px;
+            }
+            .web-logo {
+                position: absolute;
+                top: 4px; left: 153px;
+                width: 41px; height: 23px;
+            }
+
+            .web-contents {
+                position: absolute;
+                top: 58px; left: 30px;
+                display: flex;
+
+                .web-folder {
+                    margin-right: 12px;
+                    width: 167px; height: 134px;
+                }
+
+                .web-link {
+                    margin-top: 25px;
+                    li {
+                        margin-bottom: 20px;
+                        a {
+                            width: 100px; height: 16px;
+                            font-size: 10px;
+                            text-align: center;
+                            line-height: 16px;
+                            border-radius: 30px;
+                            background-color: $color-purple;
+                        }
+                        .heart-btn {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            @include responsive(large-screens) {
+                margin-top: 170px;
+                margin-bottom: 150px;
+                .img-back {
+                    width: 1186px; height: 756px;
+                }
+                .web-logo {
+                    top: 25px; left: 530px;
+                    width: 132px; height: 60px;
+                }
+
+                .web-contents {
+                    top: 199px; left: 100px;
+                    .web-folder {
+                        margin-right: 120px;
+                        width: 580px; height: 465px;
+                    }
+                    .web-link {
+                        li {
+                            margin-bottom: 66px;
+                            a {
+                                width: 280px; height: 56px;
+                                font-size: 24px;
+                                font-weight: bold;
+                                line-height: 56px;
+                            }
+                            .heart-btn {
+                                display: block;
+                                margin-top: -60px;
+                                margin-left: 50px;
+                                width: 182px; height: 181px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .detail-box {
+            position: relative;
+            margin-bottom: 94px;
+
+            .img-back {
+                width: 343px; height: 475px;
+            }
+
+            .img-back2 {
+                display: none;
+            }
+
+            .detail-logo {
+                position: absolute;
+                top: 5px; left: 90px;
+                width: 160px; height: 25px;
+            }
+
+            .detail-contents {
+                position: absolute;
+                top: 80px; left: 77px;
+                li {
+                    margin-bottom: 30px;
+                    img {
+                        width: 190px; height: 157px;
+                    }
+                }
+            }
+            .heart-btn {
+                display: none;
+            }
+
+            @include responsive(large-screens) {
+                margin-bottom: 150px;
+                .img-back {
+                    display: none;
+                }
+                .img-back2 {
+                    display: block;
+                }
+                .detail-logo {
+                    top: 30px; left: 350px;
+                    width: 480px; height: 60px;
+                }
+
+                .detail-contents {
+                    top: 200px; left: 100px;
+                    ul {
+                        display: flex;
+                        li {
+                            margin-right: 160px;
+                            img {
+                                width: 400px; height: 376px;
+                            }
+                        }
+                    }
+                }
+
+                .heart-btn {
+                    display: block;
+                    position: absolute;
+                    top: 520px; left: 490px;
+                    width: 182px; height: 181px;
+                }
+            }
+        }
+
+        .design-box {
+            position: relative;
+            margin-bottom: 94px;
+
+            .img-back {
+                width: 343px; height: 716px;
+            }
+
+            .design-logo {
+                position: absolute;
+                top: 5px; left: 135px;
+                width: 77px; height: 25px;
+            }
+            .design-contents {
+                position: absolute;
+                top: 75px; left: 33px;
+
+                    .design-list {
+                        display: grid;
+                        grid-template-columns: repeat(2, 133px);
+                        grid-auto-rows: minmax(125px, auto);
+                        grid-gap: 30px 12px;
+
+                        li {
+                            img {
+                                width: 133px; height: 125px;
+                            }
+                        }
+                }
+            }
+            @include responsive(large-screens) {
+                margin-bottom: 150px;
+                .img-back {
+                    width: 1186px; height: 2180px;
+                }
+                .design-logo {
+                    top: 20px; left: 464px;
+                    width: 264px; height: 71px;
+                }
+
+                .design-contents {
+                    top: 240px; left: 100px;
+                    .design-list {
+                        grid-template-columns: repeat(2, 575px);
+                        grid-auto-rows: minmax(430px, auto);
+
+                        li {
+                            img {
+                                width: 400px; height: 376px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .etc-box {
+            position: relative;
+            margin-bottom: 80px;
+
+            .img-back {
+                width: 343px; height: 467px;
+            }
+            .img-back2 {
+                display: none;
+            }
+
+            .etc-logo {
+                position: absolute;
+                top: 5px; left: 153px;
+                width: 42px; height: 23px;
+            }
+
+            .etc-contents {
+                position: absolute;
+                top: 83px; left: 80px;
+                li {
+                    margin-bottom: 25px;
+                    img {
+                        width: 166px; height: 155px;
+                    }
+                }
+            }
+            .heart-btn {
+                display: none;
+            }
+
+            @include responsive(large-screens) {
+                margin-bottom: 150px;
+                .img-back {
+                    display: none;
+                }
+                .img-back2 {
+                    display: block;
+                }
+
+                .etc-logo {
+                    top: 22px; left: 527px;
+                    width: 132px; height: 60px;
+                }
+
+                .etc-contents {
+                    top: 187px; left: 100px;
+                    ul {
+                        display: flex;
+                        li {
+                            margin-right: 165px;
+                            img {
+                                width: 400px; height: 376px;
+                            }
+                        }
+                    }
+                }
+                .heart-btn {
+                    display: block;
+                    position: absolute;
+                    top: 520px; left: 490px;
+                    width: 182px; height: 181px;
+                }
+            }
+        }
+    }
+}
+
+// ************** footer *******************
+footer {
+    margin-left: 16px;
+    margin-bottom: 53px;
+    .contect {
+        img {
+            width: 229px; height: 46px;
+        }
+        @include responsive(large-screens) {
+            img {
+                width: 736px; height: 151px;
+            }
+        }
+    }
+
+    .me {
+        display: flex;
+        margin-left: 208px;
+        .me1 {
+            width: 87px; height: 38px;
+        }
+        .f-btn {
+            width: 60px; height: 46px;
+        }
+        @include responsive(large-screens) {
+            margin-left: 700px;
+            .me1 {
+                width: 283px; height: 126px;
+            }
+            .f-btn {
+                width: 145px; height: 123px;
+            }
+        }
+    }
+
+    .footer-arlet {
+        position: relative;
+        img {
+            width: 339px; height: 255px;
+        }
+
+        .footer-info {
+            position: absolute;
+            top: 145px; left: 145px;
+
+            h2 {
+                font-size: 12px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        @include responsive(large-screens) {
+            img {
+                width: 981px; height: 740px;
+            }
+
+            .footer-info {
+                top: 435px; left: 460px;
+                h2 {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,518 @@
+@import url("https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff");
+@font-face {
+  font-family: "Interop";
+  src: url("https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+body {
+  background: url(../imges/header/main_back.jpg) no-repeat center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  header h1 {
+    justify-items: center;
+  }
+}
+header h1 img {
+  width: 375px;
+  height: 600px;
+}
+@media (min-width: 1200px) {
+  header h1 img {
+    width: 1920px;
+    height: 1013px;
+  }
+}
+header .container .meun-btn {
+  position: absolute;
+  top: 10px;
+  left: 284px;
+  width: 76px;
+  height: 76px;
+  border: none;
+  background: none;
+}
+@media (min-width: 1200px) {
+  header .container .meun-btn {
+    top: 10%;
+    left: 80%;
+    transform: translate(-10%, -80%);
+    width: 121px;
+    height: 121px;
+  }
+}
+header .container .header-box {
+  width: 600px;
+}
+header .container .header-box .frame {
+  position: absolute;
+  top: 145px;
+  left: 20px;
+  width: 344px;
+  height: 280px;
+}
+@media (min-width: 1200px) {
+  header .container .header-box .frame {
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 980px;
+    height: 615px;
+  }
+}
+header .container .header-box .txt {
+  position: absolute;
+  top: 158px;
+  left: 110px;
+  justify-items: center;
+}
+header .container .header-box .txt img {
+  width: 160px;
+  height: 70px;
+}
+header .container .header-box .txt .my {
+  width: 80px;
+  height: 60px;
+}
+@media (min-width: 1200px) {
+  header .container .header-box .txt {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .container .header-box .txt img {
+    width: 452px;
+    height: 150px;
+  }
+  header .container .header-box .txt .my {
+    width: 187px;
+    height: 172px;
+  }
+}
+header .container .header-button-box {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  display: flex;
+}
+header .container .header-button-box .p-btn {
+  width: 130px;
+  height: 130px;
+}
+header .container .header-button-box .h-btn .h-btn1 {
+  position: absolute;
+  bottom: -10px;
+  left: 150px;
+  width: 122px;
+  height: 106px;
+}
+header .container .header-button-box .h-btn .h-btn2 {
+  position: absolute;
+  bottom: 70px;
+  left: 240px;
+  width: 122px;
+  height: 106px;
+}
+@media (min-width: 1200px) {
+  header .container .header-button-box {
+    top: 84%;
+    left: 34%;
+    transform: translate(-84%, -34%);
+  }
+  header .container .header-button-box .p-btn {
+    width: 205px;
+    height: 206px;
+  }
+  header .container .header-button-box .h-btn .h-btn1 {
+    width: 163px;
+    height: 152px;
+  }
+  header .container .header-button-box .h-btn .h-btn2 {
+    width: 163px;
+    height: 152px;
+  }
+}
+
+main .my-box {
+  margin-top: 64px;
+  margin-bottom: 80px;
+}
+main .my-box .about-box {
+  position: relative;
+}
+main .my-box .about-box img {
+  width: 353px;
+  height: 701px;
+}
+main .my-box .about-box .about-title {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  justify-items: center;
+}
+main .my-box .about-box .about-title .about-me {
+  width: 160px;
+  height: 30px;
+}
+main .my-box .about-box .about-title .about-txt {
+  margin-top: 10px;
+  width: 220px;
+  height: 20px;
+}
+main .my-box .about-box .about-info {
+  position: absolute;
+  top: 120px;
+  left: 35px;
+  display: flex;
+}
+main .my-box .about-box .about-info img {
+  width: 130px;
+  height: 130px;
+}
+main .my-box .about-box .about-info .info-box1 {
+  margin-left: 10px;
+}
+main .my-box .about-box .about-info .info-box1 h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8eb2f4;
+}
+main .my-box .about-box .about-info .info-box1 li {
+  display: flex;
+  margin-bottom: 20px;
+}
+main .my-box .about-box .about-info .info-box1 li h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+main .my-box .about-box .about-info .info-box1 li p {
+  margin-left: 10px;
+  font-size: 10px;
+}
+main .my-box .about-box .info-box2 {
+  position: absolute;
+  top: 276px;
+  left: 35px;
+}
+main .my-box .about-box .info-box2 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8eb2f4;
+}
+main .my-box .about-box .info-box2 .cer-box {
+  margin-bottom: 20px;
+}
+main .my-box .about-box .info-box2 .cer-box li {
+  display: flex;
+}
+main .my-box .about-box .info-box2 li {
+  margin-top: 3px;
+}
+main .my-box .about-box .info-box2 li h3 {
+  font-size: 12px;
+  margin-right: 10px;
+}
+main .my-box .about-box .info-box2 li p {
+  font-size: 10px;
+}
+main .my-box .about-box .info-box3 {
+  position: absolute;
+  top: 560px;
+  left: 35px;
+}
+main .my-box .about-box .info-box3 h2 {
+  font-size: 16px;
+  color: #8eb2f4;
+  font-weight: bold;
+}
+main .my-box .about-box .info-box3 li {
+  margin-top: 3px;
+}
+main .my-box .about-box .info-box3 li h3 {
+  font-size: 12px;
+}
+main .my-box .about-box .info-box3 li p {
+  font-size: 10px;
+}
+main .skill-box {
+  margin-left: 16px;
+}
+main .skill-box .skills-logo {
+  width: 114px;
+  height: 30px;
+}
+main .skill-box .skill {
+  margin-top: 74px;
+}
+main .skill-box .skill .skill-list {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-auto-rows: minmax(120px, auto);
+  grid-gap: 20px, 20px;
+  margin-bottom: 52px;
+}
+main .skill-box .skill .skill-list li {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background-color: #d6eeff;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+main .skill-box .skill .skill-list li img {
+  width: 51px;
+  height: 51px;
+}
+main .portfolio-box {
+  margin-left: 16px;
+}
+main .portfolio-box .pf-logo {
+  width: 169px;
+  height: 29px;
+  margin-bottom: 60px;
+}
+main .portfolio-box .web-box {
+  position: relative;
+  margin-bottom: 94px;
+}
+main .portfolio-box .web-box .img-back {
+  width: 343px;
+  height: 220px;
+}
+main .portfolio-box .web-box .web-logo {
+  position: absolute;
+  top: 4px;
+  left: 153px;
+  width: 41px;
+  height: 23px;
+}
+main .portfolio-box .web-box .web-contents {
+  position: absolute;
+  top: 58px;
+  left: 30px;
+  display: flex;
+}
+main .portfolio-box .web-box .web-contents .web-folder {
+  margin-right: 12px;
+  width: 167px;
+  height: 134px;
+}
+main .portfolio-box .web-box .web-contents .web-link {
+  margin-top: 25px;
+}
+main .portfolio-box .web-box .web-contents .web-link li {
+  margin-bottom: 20px;
+}
+main .portfolio-box .web-box .web-contents .web-link li a {
+  width: 100px;
+  height: 16px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 30px;
+  background-color: #b8b1d8;
+}
+main .portfolio-box .web-box .web-contents .web-link li .heart-btn {
+  display: none;
+}
+main .portfolio-box .detail-box {
+  position: relative;
+  margin-bottom: 94px;
+}
+main .portfolio-box .detail-box .img-back {
+  width: 343px;
+  height: 475px;
+}
+main .portfolio-box .detail-box .img-back2 {
+  display: none;
+}
+main .portfolio-box .detail-box .detail-logo {
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  width: 160px;
+  height: 25px;
+}
+main .portfolio-box .detail-box .detail-contents {
+  position: absolute;
+  top: 80px;
+  left: 77px;
+}
+main .portfolio-box .detail-box .detail-contents li {
+  margin-bottom: 30px;
+}
+main .portfolio-box .detail-box .detail-contents li img {
+  width: 190px;
+  height: 157px;
+}
+main .portfolio-box .detail-box .detail-contents li .heart-btn {
+  display: none;
+}
+main .portfolio-box .design-box {
+  position: relative;
+  margin-bottom: 94px;
+}
+main .portfolio-box .design-box .img-back {
+  width: 343px;
+  height: 716px;
+}
+main .portfolio-box .design-box .design-logo {
+  position: absolute;
+  top: 5px;
+  left: 135px;
+  width: 77px;
+  height: 25px;
+}
+main .portfolio-box .design-box .design-contents {
+  position: absolute;
+  top: 75px;
+  left: 33px;
+}
+main .portfolio-box .design-box .design-contents .design-list {
+  display: grid;
+  grid-template-columns: repeat(2, 133px);
+  grid-auto-rows: minmax(125px, auto);
+  grid-gap: 30px 12px;
+}
+main .portfolio-box .design-box .design-contents .design-list li img {
+  width: 133px;
+  height: 125px;
+}
+main .portfolio-box .etc-box {
+  position: relative;
+  margin-bottom: 80px;
+}
+main .portfolio-box .etc-box .img-back {
+  width: 343px;
+  height: 467px;
+}
+main .portfolio-box .etc-box .img-back2 {
+  display: none;
+}
+main .portfolio-box .etc-box .etc-logo {
+  position: absolute;
+  top: 5px;
+  left: 153px;
+  width: 42px;
+  height: 23px;
+}
+main .portfolio-box .etc-box .etc-contents {
+  position: absolute;
+  top: 83px;
+  left: 80px;
+}
+main .portfolio-box .etc-box .etc-contents li {
+  margin-bottom: 25px;
+}
+main .portfolio-box .etc-box .etc-contents li img {
+  width: 166px;
+  height: 155px;
+}
+main .portfolio-box .etc-box .etc-contents li .heart-btn {
+  display: none;
+}
+
+footer {
+  margin-left: 16px;
+  margin-bottom: 53px;
+}
+footer .contect img {
+  width: 229px;
+  height: 46px;
+}
+footer .me {
+  display: flex;
+  margin-left: 208px;
+}
+footer .me .me1 {
+  width: 87px;
+  height: 38px;
+}
+footer .me .f-btn {
+  width: 60px;
+  height: 46px;
+}
+footer .footer-arlet {
+  position: relative;
+}
+footer .footer-arlet img {
+  width: 339px;
+  height: 255px;
+}
+footer .footer-arlet .footer-info {
+  position: absolute;
+  top: 145px;
+  left: 145px;
+}
+footer .footer-arlet .footer-info h2 {
+  font-size: 12px;
+}
+footer .footer-arlet .footer-info p {
+  font-size: 10px;
+}/*# sourceMappingURL=index.css.map */

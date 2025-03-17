@@ -1,0 +1,55 @@
+@import url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff');
+
+@font-face {
+    font-family: 'Interop';
+    src: url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2')
+        format('woff2'),
+    url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 16px;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+img {
+    display: block;
+    width: 100%;
+}
+h1 {
+    font-size: 36;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+h4 {
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+    line-height: 2;
+}
