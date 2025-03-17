@@ -28,7 +28,7 @@ a {
 }
 a:hover {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 img {
@@ -187,7 +187,14 @@ header .container .header-button-box .h-btn .h-btn2 {
     width: 205px;
     height: 206px;
   }
+  header .container .header-button-box .h-btn {
+    position: absolute;
+    top: 135%;
+    left: 180%;
+  }
   header .container .header-button-box .h-btn .h-btn1 {
+    top: -140px;
+    left: 60px;
     width: 163px;
     height: 152px;
   }
@@ -201,12 +208,29 @@ main .my-box {
   margin-top: 64px;
   margin-bottom: 80px;
 }
+@media (min-width: 1200px) {
+  main .my-box {
+    margin-top: 132px;
+    margin-bottom: 120px;
+  }
+}
 main .my-box .about-box {
   position: relative;
 }
-main .my-box .about-box img {
+main .my-box .about-box .mbf {
   width: 353px;
   height: 701px;
+}
+main .my-box .about-box .pcf {
+  display: none;
+}
+@media (min-width: 1200px) {
+  main .my-box .about-box .mbf {
+    display: none;
+  }
+  main .my-box .about-box .pcf {
+    display: block;
+  }
 }
 main .my-box .about-box .about-title {
   position: absolute;
@@ -222,6 +246,20 @@ main .my-box .about-box .about-title .about-txt {
   margin-top: 10px;
   width: 220px;
   height: 20px;
+}
+@media (min-width: 1200px) {
+  main .my-box .about-box .about-title {
+    top: 62px;
+    left: 100px;
+  }
+  main .my-box .about-box .about-title .about-me {
+    width: 410px;
+    height: 67px;
+  }
+  main .my-box .about-box .about-title .about-txt {
+    width: 430px;
+    height: 31px;
+  }
 }
 main .my-box .about-box .about-info {
   position: absolute;
@@ -254,6 +292,32 @@ main .my-box .about-box .about-info .info-box1 li p {
   margin-left: 10px;
   font-size: 10px;
 }
+@media (min-width: 1200px) {
+  main .my-box .about-box .about-info {
+    top: 200px;
+    left: 100px;
+    flex-direction: column;
+  }
+  main .my-box .about-box .about-info img {
+    width: 280px;
+    height: 280px;
+  }
+  main .my-box .about-box .about-info .info-box1 {
+    margin-top: 40px;
+  }
+  main .my-box .about-box .about-info .info-box1 h2 {
+    font-size: 30px;
+  }
+  main .my-box .about-box .about-info .info-box1 li {
+    margin-bottom: 30px;
+  }
+  main .my-box .about-box .about-info .info-box1 li h3 {
+    font-size: 24px;
+  }
+  main .my-box .about-box .about-info .info-box1 li p {
+    font-size: 18px;
+  }
+}
 main .my-box .about-box .info-box2 {
   position: absolute;
   top: 276px;
@@ -280,6 +344,24 @@ main .my-box .about-box .info-box2 li h3 {
 main .my-box .about-box .info-box2 li p {
   font-size: 10px;
 }
+@media (min-width: 1200px) {
+  main .my-box .about-box .info-box2 {
+    top: 197px;
+    left: 480px;
+  }
+  main .my-box .about-box .info-box2 h2 {
+    font-size: 30px;
+  }
+  main .my-box .about-box .info-box2 li {
+    margin-top: 15px;
+  }
+  main .my-box .about-box .info-box2 li h3 {
+    font-size: 24px;
+  }
+  main .my-box .about-box .info-box2 li p {
+    font-size: 18px;
+  }
+}
 main .my-box .about-box .info-box3 {
   position: absolute;
   top: 560px;
@@ -299,12 +381,49 @@ main .my-box .about-box .info-box3 li h3 {
 main .my-box .about-box .info-box3 li p {
   font-size: 10px;
 }
+@media (min-width: 1200px) {
+  main .my-box .about-box .info-box3 {
+    top: 197px;
+    left: 780px;
+  }
+  main .my-box .about-box .info-box3 h2 {
+    font-size: 30px;
+  }
+  main .my-box .about-box .info-box3 li {
+    margin-top: 15px;
+  }
+  main .my-box .about-box .info-box3 li h3 {
+    font-size: 24px;
+  }
+  main .my-box .about-box .info-box3 li p {
+    font-size: 18px;
+  }
+}
+main .my-box .ab-btn {
+  display: none;
+}
+@media (min-width: 1200px) {
+  main .my-box .ab-btn {
+    display: block;
+    position: absolute;
+    top: 570px;
+    left: 858px;
+    width: 182px;
+    height: 181px;
+  }
+}
 main .skill-box {
   margin-left: 16px;
 }
 main .skill-box .skills-logo {
   width: 114px;
   height: 30px;
+}
+@media (min-width: 1200px) {
+  main .skill-box .skills-logo {
+    width: 307px;
+    height: 67px;
+  }
 }
 main .skill-box .skill {
   margin-top: 74px;
@@ -329,6 +448,25 @@ main .skill-box .skill .skill-list li img {
   width: 51px;
   height: 51px;
 }
+@media (min-width: 1200px) {
+  main .skill-box .skill {
+    margin-top: 150px;
+  }
+  main .skill-box .skill .skill-list {
+    grid-template-columns: repeat(4, 255px);
+    grid-auto-rows: minmax(255px, auto);
+    grid-gap: 200px, 200px;
+    margin-bottom: 152px;
+  }
+  main .skill-box .skill .skill-list li {
+    width: 180px;
+    height: 180px;
+  }
+  main .skill-box .skill .skill-list li img {
+    width: 90px;
+    height: 90px;
+  }
+}
 main .portfolio-box {
   margin-left: 16px;
 }
@@ -336,6 +474,12 @@ main .portfolio-box .pf-logo {
   width: 169px;
   height: 29px;
   margin-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  main .portfolio-box .pf-logo {
+    width: 465px;
+    height: 71px;
+  }
 }
 main .portfolio-box .web-box {
   position: relative;
@@ -381,6 +525,48 @@ main .portfolio-box .web-box .web-contents .web-link li a {
 main .portfolio-box .web-box .web-contents .web-link li .heart-btn {
   display: none;
 }
+@media (min-width: 1200px) {
+  main .portfolio-box .web-box {
+    margin-top: 170px;
+    margin-bottom: 150px;
+  }
+  main .portfolio-box .web-box .img-back {
+    width: 1186px;
+    height: 756px;
+  }
+  main .portfolio-box .web-box .web-logo {
+    top: 25px;
+    left: 530px;
+    width: 132px;
+    height: 60px;
+  }
+  main .portfolio-box .web-box .web-contents {
+    top: 199px;
+    left: 100px;
+  }
+  main .portfolio-box .web-box .web-contents .web-folder {
+    margin-right: 120px;
+    width: 580px;
+    height: 465px;
+  }
+  main .portfolio-box .web-box .web-contents .web-link li {
+    margin-bottom: 66px;
+  }
+  main .portfolio-box .web-box .web-contents .web-link li a {
+    width: 280px;
+    height: 56px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 56px;
+  }
+  main .portfolio-box .web-box .web-contents .web-link li .heart-btn {
+    display: block;
+    margin-top: -60px;
+    margin-left: 50px;
+    width: 182px;
+    height: 181px;
+  }
+}
 main .portfolio-box .detail-box {
   position: relative;
   margin-bottom: 94px;
@@ -411,8 +597,47 @@ main .portfolio-box .detail-box .detail-contents li img {
   width: 190px;
   height: 157px;
 }
-main .portfolio-box .detail-box .detail-contents li .heart-btn {
+main .portfolio-box .detail-box .heart-btn {
   display: none;
+}
+@media (min-width: 1200px) {
+  main .portfolio-box .detail-box {
+    margin-bottom: 150px;
+  }
+  main .portfolio-box .detail-box .img-back {
+    display: none;
+  }
+  main .portfolio-box .detail-box .img-back2 {
+    display: block;
+  }
+  main .portfolio-box .detail-box .detail-logo {
+    top: 30px;
+    left: 350px;
+    width: 480px;
+    height: 60px;
+  }
+  main .portfolio-box .detail-box .detail-contents {
+    top: 200px;
+    left: 100px;
+  }
+  main .portfolio-box .detail-box .detail-contents ul {
+    display: flex;
+  }
+  main .portfolio-box .detail-box .detail-contents ul li {
+    margin-right: 160px;
+  }
+  main .portfolio-box .detail-box .detail-contents ul li img {
+    width: 400px;
+    height: 376px;
+  }
+  main .portfolio-box .detail-box .heart-btn {
+    display: block;
+    position: absolute;
+    top: 520px;
+    left: 490px;
+    width: 182px;
+    height: 181px;
+  }
 }
 main .portfolio-box .design-box {
   position: relative;
@@ -444,6 +669,33 @@ main .portfolio-box .design-box .design-contents .design-list li img {
   width: 133px;
   height: 125px;
 }
+@media (min-width: 1200px) {
+  main .portfolio-box .design-box {
+    margin-bottom: 150px;
+  }
+  main .portfolio-box .design-box .img-back {
+    width: 1186px;
+    height: 2180px;
+  }
+  main .portfolio-box .design-box .design-logo {
+    top: 20px;
+    left: 464px;
+    width: 264px;
+    height: 71px;
+  }
+  main .portfolio-box .design-box .design-contents {
+    top: 240px;
+    left: 100px;
+  }
+  main .portfolio-box .design-box .design-contents .design-list {
+    grid-template-columns: repeat(2, 575px);
+    grid-auto-rows: minmax(430px, auto);
+  }
+  main .portfolio-box .design-box .design-contents .design-list li img {
+    width: 400px;
+    height: 376px;
+  }
+}
 main .portfolio-box .etc-box {
   position: relative;
   margin-bottom: 80px;
@@ -474,8 +726,47 @@ main .portfolio-box .etc-box .etc-contents li img {
   width: 166px;
   height: 155px;
 }
-main .portfolio-box .etc-box .etc-contents li .heart-btn {
+main .portfolio-box .etc-box .heart-btn {
   display: none;
+}
+@media (min-width: 1200px) {
+  main .portfolio-box .etc-box {
+    margin-bottom: 150px;
+  }
+  main .portfolio-box .etc-box .img-back {
+    display: none;
+  }
+  main .portfolio-box .etc-box .img-back2 {
+    display: block;
+  }
+  main .portfolio-box .etc-box .etc-logo {
+    top: 22px;
+    left: 527px;
+    width: 132px;
+    height: 60px;
+  }
+  main .portfolio-box .etc-box .etc-contents {
+    top: 187px;
+    left: 100px;
+  }
+  main .portfolio-box .etc-box .etc-contents ul {
+    display: flex;
+  }
+  main .portfolio-box .etc-box .etc-contents ul li {
+    margin-right: 165px;
+  }
+  main .portfolio-box .etc-box .etc-contents ul li img {
+    width: 400px;
+    height: 376px;
+  }
+  main .portfolio-box .etc-box .heart-btn {
+    display: block;
+    position: absolute;
+    top: 520px;
+    left: 490px;
+    width: 182px;
+    height: 181px;
+  }
 }
 
 footer {
@@ -485,6 +776,12 @@ footer {
 footer .contect img {
   width: 229px;
   height: 46px;
+}
+@media (min-width: 1200px) {
+  footer .contect img {
+    width: 736px;
+    height: 151px;
+  }
 }
 footer .me {
   display: flex;
@@ -497,6 +794,19 @@ footer .me .me1 {
 footer .me .f-btn {
   width: 60px;
   height: 46px;
+}
+@media (min-width: 1200px) {
+  footer .me {
+    margin-left: 700px;
+  }
+  footer .me .me1 {
+    width: 283px;
+    height: 126px;
+  }
+  footer .me .f-btn {
+    width: 145px;
+    height: 123px;
+  }
 }
 footer .footer-arlet {
   position: relative;
@@ -515,4 +825,21 @@ footer .footer-arlet .footer-info h2 {
 }
 footer .footer-arlet .footer-info p {
   font-size: 10px;
+}
+@media (min-width: 1200px) {
+  footer .footer-arlet img {
+    width: 981px;
+    height: 740px;
+  }
+  footer .footer-arlet .footer-info {
+    top: 435px;
+    left: 460px;
+  }
+  footer .footer-arlet .footer-info h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  footer .footer-arlet .footer-info p {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=index.css.map */
